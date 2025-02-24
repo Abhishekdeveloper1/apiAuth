@@ -17,7 +17,7 @@ const handleToken=(req,res,next)=>{
         return res.status(401).json({ message: 'Invalid or expired token' });
     }
 
-req.user=userData;
+// req.user=userData;
     next();
 }
 
